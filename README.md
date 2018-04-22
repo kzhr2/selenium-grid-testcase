@@ -1,30 +1,47 @@
 # selenium-grid-testcase
 
-## 1. git clone‚·‚é
+## 0. ã€ŒNodeJSã€ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã€‚
+
+```
+sudo yum install epel-release
+sudo yum install nodejs
+node -v
+```
+
+ã‚‚ã—ãã¯ã€rhel7ç³»ãªã‚‰ã°â†“ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+```
+wget http://mirror.dmmlabs.jp/linux/fedora/epel//epel-release-latest-7.noarch.rpm
+rpm -ivh epel-release-latest-7.noarch.rpm
+sudo yum install nodejs
+node -v
+```
+
+
+## 1. git cloneã™ã‚‹
 
 ```
 git clone https://github.com/kzhr2/selenium-grid-testcase.git
 ```
 
-## 2. unpm installv‚·‚é
-upackage.jsonv‚Æ“¯‚¶ŠK‘w‚ÅÀsB
+## 2. ã€Œnpm installã€ã™ã‚‹
+ã€Œpackage.jsonã€ã¨åŒã˜éšå±¤ã§å®Ÿè¡Œã€‚
 
 ```
 npm install
 ```
 
-## 3. usampleTest01.jsv‚Ìuconfig.gridhostv‚ğ‘‚«Š·‚¦‚éB
+## 3. ã€ŒsampleTest01.jsã€ã®ã€Œconfig.gridhostã€ã‚’æ›¸ãæ›ãˆã‚‹ã€‚
 
 ```
 config.gridhost = '192.168.0.13';
 ```
 
-¦Grid‚ÌPort‚ªƒfƒtƒHƒ‹ƒgˆÈŠO‚Ìê‡‚Í‚±‚Á‚¿‚à‘‚«Š·‚¦‚éB
+â€»Gridã®PortãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆä»¥å¤–ã®å ´åˆã¯ã“ã£ã¡ã‚‚æ›¸ãæ›ãˆã‚‹ã€‚
 ``` 
 config.gridport = 4444;
 ```
 
-## 4. unpm testv‚·‚é
+## 4. ã€Œnpm testã€ã™ã‚‹
 
 ```
 npm test
